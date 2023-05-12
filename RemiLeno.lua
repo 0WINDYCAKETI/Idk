@@ -5,6 +5,10 @@ if not game:IsLoaded() then
 	repeat wait(delays) wait(delays) until game:IsLoaded()
 end
 
+--[Checking(Fluxus): Start]
+
+
+
 --[Checking(Krnl): Start]
 local http_request = krnl and krnl.request or request;
 local HWIDChecking = loadstring(game:HttpGet('https://raw.githubusercontent.com/0WINDYCAKETI/0Azuner/main/Whitelist(Krnl).lua'))()
@@ -15,13 +19,13 @@ local HWIDs = decoded.headers['Krnl-Fingerprint']
 
 plr = game.Players.LocalPlayer
 
-print("[AzunerHub]: [1/3] Loading AzunerLib...")
+print("[AzunerHub]: [1/3] Loading RemiLenoLib...")
 wait('1.5')
-print("[AzunerHub]: ✅ Loading AzunerLib Successfully")
+print("[AzunerHub]: ✅ Loading RemiLenoLib Successfully")
 wait('1.5')
-print("[AzunerHub]: [2/3] Connecting to serber Azuner..")
+print("[AzunerHub]: [2/3] Connecting to server RemiLeno..")
 wait('1.5')	
-print("[AzunerHub]: ✅ Connecting to serber Azuner Successfully")
+print("[AzunerHub]: ✅ Connecting to server Successfully")
 wait('1.5')
 
 for i, v in pairs(HWIDChecking)  do
@@ -29,8 +33,13 @@ for i, v in pairs(HWIDChecking)  do
 		print("[AzunerHub]: [3/3] Checking authenticated!")
 		wait('1.5')
    	 	print("[AzunerHub]: ✅ Authenticated Successfully")
-		wait('1.5')
+		wait('.5')
+		print('[AzunerHub]: Loading Script.')
+		wait('.5')
+		print('[AzunerHub]: Loading Script..')
+		wait('.5')
 		print('[AzunerHub]: Loading Script...')
+		wait('1.5')
 	else
 		print("[AzunerHub]: [3/3] Checking authenticated!")
 		wait('1.5')
@@ -40,7 +49,8 @@ for i, v in pairs(HWIDChecking)  do
 	end
 end
 
---[Checking(Krnl)3: End]
+--[Checking(Krnl): End]
+--[Checking(Fluxus): End]
 
 --[Loading: End]
 
